@@ -3,7 +3,7 @@ using UnityEngine;
 public class MoveShell : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    float speed = 1.0f;
+    public float speed = 1.0f;
     void Start()
     {
         
@@ -13,6 +13,6 @@ public class MoveShell : MonoBehaviour
     void Update()
     {
 
-        this.transform.Translate(0, Time.deltaTime * speed * 0.5f, Time.deltaTime * speed);
+        this.transform.Translate(0,0, Time.deltaTime * speed);
     }
 }
