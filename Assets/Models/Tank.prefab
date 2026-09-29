@@ -32,7 +32,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6938391260596658440}
-  - {fileID: 5404442347238069112}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2032294011007305851
@@ -47,9 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416edf81c5d4cda489e33dc77ed4f192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireShell
-  bullet: {fileID: 912315063982787637, guid: e5a06904a533f4b4bb7736cf156ba32d, type: 3}
+  bullet: {fileID: 912315063982787637, guid: 1b94b8113667a784296bd6d777881d9a, type: 3}
   turret: {fileID: 4345005910820173176}
   enemy: {fileID: 0}
+  turretBase: {fileID: 6880403096463785013}
 --- !u!65 &2630481494585431648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,13 +221,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4345005910820173176}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.485, z: 0.939}
+  m_LocalRotation: {x: -0.13161148, y: 0.000000029802322, z: 0.000000022351742, w: 0.9913014}
+  m_LocalPosition: {x: 0, y: 0.633, z: 1.028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2887154942990734001}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 6880403096463785013}
+  m_LocalEulerAnglesHint: {x: -15.125, y: 0, z: 0}
 --- !u!1 &4589312892633058781
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +441,8 @@ Transform:
   m_LocalPosition: {x: 0.000010554959, y: 1.0796412, z: -0.025321364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5404442347238069112}
   m_Father: {fileID: 6938391260596658440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8793404300833214937

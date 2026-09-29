@@ -16,7 +16,6 @@ public class AIShell : MonoBehaviour
         }
     }
 
-
     void Star()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -24,6 +23,6 @@ public class AIShell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.forward = rb.angularVelocity;
+        this.transform.forward = rb.linearVelocity;
     }
 }

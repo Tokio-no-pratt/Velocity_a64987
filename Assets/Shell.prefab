@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4489030712086299352}
   - component: {fileID: 3261045054307347989}
   - component: {fileID: 2699377941103666267}
+  - component: {fileID: 6551893726929158964}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -106,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d1017cf0ee8b14eb95227811249f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveShell
-  speed: 1
+  speed: 3
 --- !u!136 &4489030712086299352
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -155,3 +156,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aacaa7a7568b94e06b8e07095cfb1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyShell
+--- !u!54 &6551893726929158964
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912315063982787637}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
